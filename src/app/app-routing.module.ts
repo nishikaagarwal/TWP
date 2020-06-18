@@ -5,6 +5,22 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'vision',
+    loadChildren: () => import('./vision/vision.module').then( m => m.VisionPageModule)
+  },
+  {
+    path: 'plandate',
+    loadChildren: () => import('./plandate/plandate.module').then( m => m.PlandatePageModule)
+  },
+  {
+    path: 'addgoals',
+    loadChildren: () => import('./addgoals/addgoals.module').then( m => m.AddgoalsPageModule)
+  },
+  {
+    path: 'tacticmodal',
+    loadChildren: () => import('./tacticmodal/tacticmodal.module').then( m => m.TacticmodalPageModule)
   }
 ];
 @NgModule({

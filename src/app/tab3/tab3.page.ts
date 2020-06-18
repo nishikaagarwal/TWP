@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
 export class Tab3Page {
 
   constructor() {}
-
 }
+
+// // tslint:disable-next-line:only-arrow-functions
+// $('i').click(function() {
+//   $('.timeline-panel').show(0);
+// });
+

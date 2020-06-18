@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Start your 12WP</ion-title>
+
+        <ion-button fill="clear" slot="end" (click)="OpenPopover($event)">
+            <ion-icon color="dark" size="large" name="information-circle-outline"></ion-icon>
+        </ion-button>
+        <ion-back-button color="dark" slot="start"></ion-back-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card color="primary">
+        <ion-card-header>Plan name</ion-card-header>
+        <ion-card-content>
+            <ion-input placeholder="Sample plan name"></ion-input>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card color="primary">
+        <ion-card-header>Plan date</ion-card-header>
+        <ion-card-content>
+            <ion-datetime placeholder="DD/MM/YYYY" backdropDismiss="true" displayFormat="DD/MM/YYYY" min="2020" max="2023" value="2002-09-23T15:03:46.789"></ion-datetime>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-button (click)="navigate()">Add your first goal</ion-button>
+</ion-content>

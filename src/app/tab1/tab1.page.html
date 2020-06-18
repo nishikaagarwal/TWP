@@ -1,17 +1,44 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Goals</ion-title>
+        <ion-button slot="end" (click)="navigate()">
+            <ion-icon name="rocket-outline"></ion-icon>
+        </ion-button>
+        <ion-title color="medium" size="small">Plan Name - 1 May to 1 August</ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content>
+
+    <ion-card color="primary">
+        <ion-card-header>
+            <ion-card-subtitle color="medium">Flip to look at goal tactics!</ion-card-subtitle>
+            <ion-card-title>Goal-1</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content color="light">
+            Goal Description
+        </ion-card-content>
+    </ion-card>
+
+    <ion-card color="primary">
+        <ion-card-header>
+            <ion-card-subtitle color="medium"> Flip to look at goal tactics!</ion-card-subtitle>
+            <ion-card-title>Goal-2</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content color="light">
+            Goal Description
+        </ion-card-content>
+    </ion-card>
+
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="add()">
+        <ion-fab-button color="secondary">
+            <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+
+
 </ion-content>

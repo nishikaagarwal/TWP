@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Vision</ion-title>
+        <ion-button fill="clear" slot="end" (click)="OpenPopover($event)">
+            <ion-icon color="dark" size="large" name="information-circle-outline"></ion-icon>
+        </ion-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card color="primary">
+        <ion-card-header></ion-card-header>
+        <ion-card-content>
+            <ion-input placeholder="Sample vision"></ion-input>
+        </ion-card-content>
+    </ion-card>
+    <ion-button fill="clear" (click)="Save()">
+        <ion-icon color="success" size="large" name="checkmark-circle-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="navigate()">Turn Vision into Plan</ion-button>
+</ion-content>
